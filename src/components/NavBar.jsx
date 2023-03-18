@@ -20,6 +20,10 @@ const NavBar = () => {
       id: 4,
       link: "contact",
     },
+    {
+      id: 5,
+      link: "experience",
+    },
   ];
 
   return (
@@ -34,7 +38,7 @@ const NavBar = () => {
               key={id}
               className="px-4 font-medium capitalize text-gray-500 hover:scale-125 cursor-pointer duration-200 hover:text-white"
             >
-              {link}
+       <a href={`#${link}`}>{link}</a>
             </li>
           ))}
         </ul>
@@ -51,7 +55,7 @@ const NavBar = () => {
               key={id}
               className="py-4 font-medium text-4xl capitalize text-gray-500 hover:scale-125 hover:text-white cursor-pointer duration-200"
             >
-              {link}
+       <a href={`#${link}`}>{link}</a>
             </li>
           ))}
         </ul>
